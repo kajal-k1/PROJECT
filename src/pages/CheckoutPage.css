@@ -1,0 +1,109 @@
+
+/* === Base Styles === */
+.checkout-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"] {
+  flex: 1 1 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.checkout-form input[type="text"].full, /* for street field spanning full width */
+.checkout-form input[type="email"].full {
+  flex: 1 1 100%;
+}
+
+.payment-methods {
+  flex: 1 1 100%;
+  margin: 12px 0;
+}
+
+.payment-methods label {
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+.summary {
+  flex: 1 1 100%;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.summary p {
+  margin: 4px 0;
+}
+
+.summary strong {
+  font-size: 18px;
+}
+
+.checkout-form button {
+  flex: 1 1 100%;
+  padding: 12px;
+  background-color: #3399cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.3s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #2277aa;
+}
+
+/* === Responsive Enhancements === */
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+  .checkout-form input[type="text"],
+  .checkout-form input[type="email"] {
+    flex: 1 1 100%;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .checkout-container {
+    margin: 20px 10px;
+    padding: 16px;
+  }
+  
+  .checkout-container h2 {
+    font-size: 20px;
+  }
+  
+  .summary {
+    font-size: 14px;
+  }
+  
+  .checkout-form button {
+    padding: 14px;
+    font-size: 18px;
+  }
+}

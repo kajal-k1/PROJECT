@@ -1,0 +1,184 @@
+
+/* === Original Styles (unchanged) === */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wishlist-btn,
+.compare-btn {
+  position: absolute;
+  top: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wishlist-btn {
+  right: 40px;
+}
+
+.compare-btn {
+  right: 10px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.product-image-container:hover .show-on-hover {
+  display: block;
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.product-details {
+  padding: 12px;
+}
+
+.brand-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.product-title {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.current-price {
+  font-weight: 600;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discount {
+  color: #d50057;
+  font-weight: 500;
+}
+
+.rating {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.rating-score {
+  color: green;
+}
+
+.price-drop {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.limited-stock {
+  font-size: 13px;
+  color: #b30000;
+  margin-top: 4px;
+}
+
+/* === Responsive Grid Breakpoints === */
+/* Tablet (3 columns) */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Landscape mobile or small tablets (2 columns) */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px;
+  }
+}

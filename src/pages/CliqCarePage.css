@@ -1,0 +1,183 @@
+
+
+.cliqcare-container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.cliqcare-sidebar {
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.cliqcare-sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.cliqcare-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cliqcare-sidebar li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cliqcare-sidebar .icon {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.cliqcare-sidebar .desc {
+  font-size: 13px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.cliqcare-content {
+  flex: 1;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.welcome-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 15px;
+  color: #333;
+}
+
+.support-img {
+  width: 120px;
+}
+
+.no-orders-section {
+  text-align: center;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.no-order-img {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.no-orders-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.no-orders-section p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.start-shopping-btn {
+  display: inline-block;
+  background-color: #e60073;
+  color: white;
+  padding: 10px 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* src/pages/CliqCarePage.css */
+
+.cliqcare-content {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.back-link {
+  color: #e5005b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.faq-section h4 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.sub {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.faq-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.faq-list li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+}
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: 600;
+  color: #333;
+}
+
+.faq-answer {
+  margin-top: 8px;
+  color: #666;
+  font-size: 0.95rem;
+}
+

@@ -1,0 +1,125 @@
+
+/* Container */
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    position: relative;
+  }
+  
+  /* Grid Layout */
+  .carousel__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 80%;
+    position: relative;
+  }
+  
+  /* Card */
+  .carousel__card {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel__card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image */
+  .carousel__image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel__card:hover .carousel__image {
+    transform: scale(1.05);
+  }
+  
+  /* Placeholder for Missing Images */
+  .carousel__placeholder {
+    width: 100%;
+    height: 350px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation Buttons */
+  .carousel__buttons {
+    position: absolute;
+    top: -5px;
+    left: 85%;
+    transform: translateX(-30%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+  }
+  
+  .carousel__arrow-btn {
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .carousel__arrow-btn:hover {
+    background-color: #d2cdceea;
+  }
+  
+  /* Heading */
+  .carousel__heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .carousel__grid {
+      grid-template-columns: repeat(4, 1fr);
+      width: 80%;
+    }
+  
+    .carousel__buttons {
+      left: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel__grid {
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+    }
+  
+    .carousel__buttons {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel__grid {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  
+    .carousel__buttons {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
